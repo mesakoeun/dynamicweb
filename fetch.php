@@ -1,5 +1,5 @@
 <style>
-  th {
+  .table th {
     background-color: #007bff;
     color: white;
     white-space: nowrap;
