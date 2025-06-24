@@ -33,16 +33,30 @@ error_reporting(E_ALL);
   .img-modal.active {
     display: flex;
   }
-  .img-modal-content {
-    position: relative;
-    background: transparent;
-    padding: 0;
-    max-width: 90vw;
-    max-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  .img-modal-zoom {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 15px;
+  border-radius: 8px;
+}
+.img-modal-content {
+  position: relative;
+  background: transparent;
+  padding: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
   .img-modal-content img {
     max-width: 80vw;
     max-height: 80vh;
